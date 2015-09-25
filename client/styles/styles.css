@@ -6,11 +6,19 @@ body {
   margin: 0 .5em;
   padding: 0 auto;
 }
+.frame {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 98%vw;
+  height: 100%vh;
+}
 .painting {
   position: relative;
   margin: .5em .5em;
   width: auto;
   height: auto;
-  max-width: 10em;
-  max-height: 15em;
+  max-width: 15em;
+  max-height: 20em;
 }

@@ -1,1 +1,5 @@
-<img ng-src="{{image.path}}" class="painting"/>
+<div class="text-center">
+  <div ng-repeat="image in images" class="frame">
+    <img ng-src="{{image.path}}" class="painting"/>
+  </div>
+</div>

@@ -1,4 +1,5 @@
 angular.module('artFiend.gallery', [])
+
 .controller('GalleryCtrl', function($scope, Images){
   $scope.images = [];
   $scope.getImages = function(){
@@ -14,9 +15,10 @@ angular.module('artFiend.gallery', [])
   }
   $scope.getImages();
 })
+
 .directive('afImg', function(){
   return {
-    priority: 1001,
+    // priority: 1001,
     templateUrl: 'app/gallery/af-img.html'
   }
 });
