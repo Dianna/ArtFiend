@@ -1,7 +1,14 @@
 body {
   background-color: black;
 }
+.gallery {
+  position: relative;
+  margin: 0 .5em;
+  padding: 0 auto;
+}
 .painting {
+  position: relative;
+  margin: .5em .5em;
   width: 10em;
   height: 15em;
 }
