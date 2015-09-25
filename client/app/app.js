@@ -1,6 +1,7 @@
 console.log('app.js accessed')
 var app = angular.module('artFiend', [
   'artFiend.gallery',
+  'artFiend.imageService',
   'ui.router'
 ])
 // Routing
