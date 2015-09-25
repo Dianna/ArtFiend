@@ -22,3 +22,14 @@ On completion, a user will be able to play a Memory style game.
 - Many different eras and styles of art
 - User created gallery games
 - High score tracker  
+
+##Current Tech Stack    
+Front-End:
+  - AngularJS  
+  - Bootstrap  
+  
+Back-End:  
+  - Node.js with Express.js  
+  - MongoDB with Mongoose ORM  
+
+Once deployed, ArtFiend will utilize AWS
