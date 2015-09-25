@@ -1,5 +1,8 @@
 console.log('app.js accessed')
-var app = angular.module('artFiend', ['ui.router'])
+var app = angular.module('artFiend', [
+  'artFiend.gallery',
+  'ui.router'
+])
 // Routing
 .config(function($stateProvider, $urlRouterProvider){
   // Unmatched url catch
@@ -8,15 +11,7 @@ var app = angular.module('artFiend', ['ui.router'])
   $stateProvider
     .state('gallery', {
       url: '/gallery',
-      templateUrl: 'app/gallery/gallery.html'
+      templateUrl: 'app/gallery/gallery.html',
+      controller: 'GalleryCtrl'
     })
 });
-
-// var app = angular.module('artFiend', [])
-//   .config(function($routeProvider){
-//     $routeProvider
-//     .when('/gallery', {
-//       templateUrl: 'gallery/gallery.html'
-//     })
-//     .otherwise('/gallery')
-//   })
