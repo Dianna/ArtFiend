@@ -8,10 +8,15 @@ var app = angular.module('artFiend', ['ui.router'])
   $stateProvider
     .state('gallery', {
       url: '/gallery',
-      templateUrl: 'gallery/gallery.html'
-    })
-    .state('otherwise', {
-      url: '/gallery',
-      templateUrl: 'gallery/gallery.html'
+      templateUrl: 'app/gallery/gallery.html'
     })
 });
+
+// var app = angular.module('artFiend', [])
+//   .config(function($routeProvider){
+//     $routeProvider
+//     .when('/gallery', {
+//       templateUrl: 'gallery/gallery.html'
+//     })
+//     .otherwise('/gallery')
+//   })
