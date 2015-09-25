@@ -14,7 +14,7 @@ var ImageSchema = new mongoose.Schema({
 //   console.log('Images removed');
 // }).then(function(){
 
-//   for (var i=1; i<=13; i++){
+//   for (var i=1; i<=14; i++){
 //   var image = new Image();
 //     image.path = 'stockImages/rembrandt'+i+'.jpg';
 //     (function(image){
