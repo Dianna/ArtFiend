@@ -13,4 +13,10 @@ angular.module('artFiend.gallery', [])
       });
   }
   $scope.getImages();
+})
+.directive('afImg', function(){
+  return {
+    priority: 1001,
+    templateUrl: 'app/gallery/af-img.html'
+  }
 });
