@@ -12,15 +12,25 @@ angular.module('artFiend.gallery', [])
         console.log('err in GalleryCtrl')
         console.error(err);
       });
-  }
+  };
   $scope.getImages();
 })
-
+.directive('galleryRow', function(){
+  return {
+    restrict: 'E',
+    scope: {
+      images: '='
+    },
+    templateUrl: 'app/gallery/gallery-row.html'
+  }
+})
 .directive('afImg', function(){
   return {
     // priority: 1001,
     restrict: 'E',
-    scope: { images: '=' },
+    scope: { 
+      image: '=',
+    },
     templateUrl: 'app/gallery/af-img.html'
   }
 });
