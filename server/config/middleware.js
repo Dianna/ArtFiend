@@ -10,7 +10,8 @@ module.exports = function(app, express){
   app.use(bodyParser.json());
 
   app.use(express.static(__dirname+'/../../client/'));
-  app.use('/bower_components', express.static(__dirname+'/../../bower_components/'))
+  app.use('/dist', express.static(__dirname+'/../../dist/'));
+  app.use('/bower_components', express.static(__dirname+'/../../bower_components/'));
   app.use('/api/images', imageRouter);
   app.use(helpers.errorLogger);
   app.use(helpers.errorHandler);
