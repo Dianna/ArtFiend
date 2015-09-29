@@ -14,5 +14,5 @@ angular.module('artFiend.galleryService', [])
 
   return {
     getImages: getImages
-  }
+  };
 });

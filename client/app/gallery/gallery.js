@@ -9,7 +9,7 @@ angular.module('artFiend.gallery', [])
         $scope.images = data;
       })
       .catch(function(err){
-        console.log('err in GalleryCtrl')
+        console.log('err in GalleryCtrl');
         console.error(err);
       });
   };
@@ -22,7 +22,7 @@ angular.module('artFiend.gallery', [])
       images: '='
     },
     templateUrl: 'app/gallery/gallery-row.html'
-  }
+  };
 })
 .directive('afImg', function(){
   return {
@@ -32,5 +32,5 @@ angular.module('artFiend.gallery', [])
       image: '=',
     },
     templateUrl: 'app/gallery/af-img.html'
-  }
+  };
 });

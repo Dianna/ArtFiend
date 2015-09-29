@@ -1,4 +1,4 @@
-console.log('app.js accessed')
+console.log('app.js accessed');
 var app = angular.module('artFiend', [
   'artFiend.galleryService',
   'artFiend.gallery',
@@ -14,5 +14,5 @@ var app = angular.module('artFiend', [
       url: '/gallery',
       templateUrl: 'app/gallery/gallery.html',
       controller: 'GalleryCtrl'
-    })
+    });
 });
