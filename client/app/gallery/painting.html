@@ -1,0 +1,9 @@
+<div>
+  <img ng-src="{{image.imageURL}}" class="painting" ng-hide="answer" ng-click="answer=true"/>
+  <div class="painting card text-center" ng-show="answer">
+    <p>{{image.title}}</p>
+    <p>{{image.technique}}  {{image.year}}</p>
+    <p>{{image.dimensions}}</p>
+    <p>{{image.gallery}}</p>
+  </div>
+</div>

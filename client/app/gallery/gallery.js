@@ -7,7 +7,7 @@ angular.module('artFiend.gallery', [])
       .then(function(data){
         // console.log('data in GalleryCtrl: ', data);
         $scope.images = data;
-        console.log($scope.images[0])
+        console.log($scope.images[0]);
       })
       .catch(function(err){
         console.log('err in GalleryCtrl');
@@ -16,13 +16,14 @@ angular.module('artFiend.gallery', [])
   };
   $scope.getImages();
 })
-.directive('imageFront', function(){
+.directive('painting', function(){
   return {
     restrict: 'E',
     scope: { 
-      image: '=',
+      image: '='
     },
-    templateUrl: 'app/gallery/image-front.html'
+    templateUrl: 'app/gallery/painting.html',
+    answer: false
   };
 });
 

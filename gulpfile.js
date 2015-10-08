@@ -2,7 +2,15 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     rename = require('gulp-rename'),
     notify = require('gulp-notify'),
-    jshint = require('gulp-jshint');
+    jshint = require('gulp-jshint'),
+    watch = require('gulp-watch')
+    batch = require('batch');
+
+gulp.task('watch', function () {
+  watch('client/app/**/*.js', batch(function (events, done) {
+    gulp.start('default', done);
+  }));
+});
 
 gulp.task('app', function() {
   return gulp.src('client/app/**/*.js')
@@ -18,4 +26,5 @@ gulp.task('app', function() {
 
 gulp.task('default', function(){
   gulp.start('app');
+  gulp.start('watch');
 });
