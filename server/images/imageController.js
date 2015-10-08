@@ -12,7 +12,7 @@ module.exports = {
         var $ = cheerio.load(html);
         $('a.image').each(function(i, element){
           var json = { imageURL: "", title: "", year: "", technique: "", dimensions: "", gallery: "", commentary: ""};
-          json.imageURL = $(this).children().attr('src').slice(2);
+          json.imageURL = "https:" + $(this).children().attr('src');
           json.title = $(this).parent().next().text();
           json.year = $(this).parent().next().next().text();
           json.technique = $(this).parent().next().next().next().text();
