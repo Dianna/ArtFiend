@@ -19,10 +19,15 @@ body {
   margin: .5em .5em;
   width: auto;
   height: auto;
-  max-width: 15em;
-  max-height: 20em;
+  min-width: 15em;
+  height: auto;
+  /*min-height: 20;*/
+  /*max-width: 15em;*/
+  /*max-height: 20em;*/
 }
 .card {
   background-color: gray;
   color: black;
+  width: 15em;
+  height: 18em;
 }
