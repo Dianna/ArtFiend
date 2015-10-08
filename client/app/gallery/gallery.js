@@ -15,22 +15,22 @@ angular.module('artFiend.gallery', [])
   };
   $scope.getImages();
 })
-.directive('galleryRow', function(){
-  return {
-    restrict: 'E',
-    scope: {
-      images: '='
-    },
-    templateUrl: 'app/gallery/gallery-row.html'
-  };
-})
-.directive('afImg', function(){
-  return {
-    // priority: 1001,
-    restrict: 'E',
-    scope: { 
-      image: '=',
-    },
-    templateUrl: 'app/gallery/af-img.html'
-  };
-});
+// .directive('galleryRow', function(){
+//   return {
+//     restrict: 'E',
+//     scope: {
+//       images: '='
+//     },
+//     templateUrl: 'app/gallery/gallery-row.html'
+//   };
+// })
+// .directive('afImg', function(){
+//   return {
+//     // priority: 1001,
+//     restrict: 'E',
+//     scope: { 
+//       image: '=',
+//     },
+//     templateUrl: 'app/gallery/af-img.html'
+//   };
+// });

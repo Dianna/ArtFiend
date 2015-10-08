@@ -3,7 +3,7 @@ angular.module('artFiend.galleryService', [])
   var getImages = function(){
     return $http({
       method: 'GET',
-      url: '/api/images'
+      url: '/images/scrape'
     })
     .then(function(res){
       return res.data;

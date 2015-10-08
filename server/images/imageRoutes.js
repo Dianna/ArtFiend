@@ -5,5 +5,5 @@ module.exports = function(imageRouter){
     console.log('router req method:req url: ', req.method,':', req.url)
     next();
   });
-  imageRouter.get('/', imageController.getImages);
+  imageRouter.get('/scrape', imageController.getImages);
 };
